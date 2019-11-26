@@ -32,6 +32,93 @@
 
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
+
+      <section class="choose-program">
+        <p class="choose-program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" class="choose-program__form program-form">
+          <fieldset class="program-form__cat-info">
+            <p>
+              <label for="name">Имя:*</label>
+              <input type="text" name="cat-info" id="name" placeholder="Барсик">
+            </p>
+            <p>
+              <label for="weight">Вес (кг):*</label>
+              <input type="text" name="cat-info" id="weight" placeholder="7">
+            </p>
+            <p>
+              <label for="age">Возраст (лет):</label>
+              <input type="text" name="cat-info" id="age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="program-form__purpose">
+            <ul class="program-form__purpose-list">
+              <li class="program-form__purpose-item">
+                <input type="radio" name="purpose" value="slim" id="slim">
+                <label for="slim">Похудение</label>
+              </li>
+              <li class="program-form__purpose-item">
+                <input type="radio" name="purpose" value="weight-gain" id="weight-gain">
+                <label for="weight-gain">Набор массы</label>
+              </li>
+              <li class="program-form__purpose-item">
+                <input type="radio" name="purpose" value="need-advice" id="need-advice">
+                <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-form__cat-owner-info">
+            <legend class="program-form__title">Контактные данные (владельца кота)</legend>
+            <p>
+              <label for="mail">E-mail:*</label>
+              <input type="email" name="cat-owner-info" id="mail" placeholder="kuklachev@gmail.com">
+            </p>
+            <p>
+              <label for="phone">Телефон:*</label>
+              <input type="number" name="cat-owner-info" id="phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
+          <fieldset class="program-form__comment">
+            <legend class="program-form__title">Комментарий</legend>
+            <textarea name="comment" cols="50" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program-form__more">
+            <legend class="program-form__title">Дополнительно</legend>
+            <ul class="program-form__more-list">
+              <li class="program-form__more-item">
+                <input type="checkbox" name="more" value="sweetener" id="sweetener">
+                <label for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="program-form__more-item">
+                <input type="checkbox" name="more" value="water" id="water">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li class="program-form__more-item">
+                <input type="checkbox" name="more" value="milk" id="milk">
+                <label for="milk">Молоко</label>
+              </li>
+              <li class="program-form__more-item">
+                <input type="checkbox" name="more" value="vitamins" id="vitamins">
+                <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="program-form__button button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+        </form>
+        <p class="choose-program__required-form-fields">* — Обязательные поля</p>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A019abc35d33c9983098c0e3ce2c2af2e6adbb0fce835bf434029917154bdb8fe&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">

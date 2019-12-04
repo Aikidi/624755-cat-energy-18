@@ -6,14 +6,14 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__logo header-logo">
+    <header class="header">
+      <div class="header__logo header-logo">
         <a class="header-logo__link">
           <img src="img/logo.svg" alt="Cat Energy" width="200" height="100" class="header-logo__img">
         </a>
       </div>
       <nav class="main-nav">
-        <div class="main-nav__wrappr">
+        <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list_item site-list_item--active">
@@ -40,27 +40,31 @@
         </div>
         <a href="#" class="banner__button button">Подобрать программу</a>
       </section>
-      <section class="programs">
-        <div class="programs__wrapper">
-        <h2 class="visually-hidden">Программы</h2>
-          <ul class="programs__list">
-            <li class="programs__item">
-              <h3 class="programs__title programs__title--slim">Похудение</h3>
-              <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="catalog-slim.html" class="programs__link">Каталог Slim</a>
+      <section class="series">
+        <div class="series__wrapper page-wrapper">
+        <h2 class="visually-hidden">Серии товаров</h2>
+          <ul class="series__list">
+            <li class="series__item-box">
+              <article class="series__item seria seria--slim">
+                <h3 class="seria__title seria__title--slim">Похудение</h3>
+                <p class="seria__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a href="catalog-slim.html" class="seria__link">Каталог Slim</a>
+              </article>
             </li>
-            <li class="programs__item">
-              <h3 class="programs__title programs__title--pro">Набор массы</h3>
-              <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="catalog-pro.html" class="programs__link">Каталог Pro</a>
+            <li class="series__item-box">
+              <article class="series__item seria seria--pro">
+                <h3 class="seria__title seria__title--pro">Набор массы</h3>
+                <p class="seria__description">Заработать авторитет среди дворовых котов и даже собак?
+                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a href="catalog-pro.html" class="seria__link">Каталог Pro</a>
+              </article>
             </li>
           </ul>
         </div>
       </section>
       <section class="features">
-        <div class="features__wrapper">
-          <h2 class="features__title">Как это работает</h2>
+        <div class="features__wrapper page-wrapper">
+          <h2 class="features__title section-title">Как это работает</h2>
           <ul class="features__list">
             <li class="features__item features__item--healthy">
             <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -79,8 +83,8 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
+        <div class="example__wrapper page-wrapper">
+          <h2 class="example__title section-title">Живой пример</h2>
           <div class="example__description">
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <div class="example__info">
@@ -106,10 +110,10 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper page-wrapper">
           <div class="contacts__text">
             <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
           <div class="contacts__map">
             <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A019abc35d33c9983098c0e3ce2c2af2e6adbb0fce835bf434029917154bdb8fe&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -119,14 +123,14 @@
 
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__logo footer-logo">
+    <footer class="footer">
+      <div class="footer__wrapper page-wrapper">
+        <div class="footer__logo footer-logo">
           <a class="footer-logo__link">
             <img src="img/footer-logo-svg" alt="Cat Energy" width="128" height="24" class="footer-logo__img">
           </a>
         </div>
-        <div class="page-footer__social social">
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a href="https://vk.com" class="social__link social__link--vk">Вконтакте</a>
@@ -139,10 +143,10 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a href="https://htmlacademy.ru" class="copyright__link">
-            <img src="htmlacademy-svg" alt="HTML Academy" class="copyright__logo">
+        <div class="footer__developer developer">
+          <a href="https://htmlacademy.ru" class="developer__link">
+            <p class="developer__text">HTML Academy</p>
+            <img src="htmlacademy-svg" alt="HTML Academy" width="27" height="34" class="developer__logo">
           </a>
         </div>
       </div>

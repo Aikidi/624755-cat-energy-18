@@ -1,2 +1,11 @@
-@import 'common/fonts/fonts.scss';
-@import 'blocks/main-nav/main-nav.scss';
+@import 'variables.scss';
+@import 'common/fonts.scss';
+@import 'common/basic.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/series-list__item.scss';
+@import 'blocks/series-list.scss';
+@import 'blocks/article.scss';
+@import 'blocks/article__title.scss';
+@import 'blocks/article__description.scss';
+
+

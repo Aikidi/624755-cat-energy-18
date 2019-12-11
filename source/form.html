@@ -8,27 +8,29 @@
   <body>
 
       <header class="header">
-        <div class="header__logo header-logo">
-          <a class="header-logo__link">
-            <img src="img/logo.svg" alt="Cat Energy" width="200" height="100" class="header-logo__img">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
-              </li>
-            </ul>
+        <div class="page-wrapper page-wrapper--header">
+          <div class="header__logo header-logo">
+            <a class="header-logo__link">
+              <img src="img/logo.svg" alt="Cat Energy" width="200" height="100" class="header-logo__img">
+            </a>
           </div>
-        </nav>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <ul class="main-nav__list site-list common-list">
+                <li class="site-list__item site-list__item--active">
+                  <a href="index.html" class="site-list__link link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="catalog.html" class="site-list__link link">Каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html" class="site-list__link link">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 
     <main class="page-main">
@@ -123,25 +125,25 @@
     <footer class="footer">
       <div class="page-wrapper page-wrapper--footer">
         <div class="footer__logo footer-logo">
-          <a class="footer-logo__link">
+          <a class="footer-logo__link link">
             <img src="img/footer-logo-svg" alt="Cat Energy" width="128" height="24" class="footer-logo__img">
           </a>
         </div>
         <div class="footer__social social">
           <ul class="social-list common-list">
             <li class="social-list__item">
-              <a href="https://vk.com" class="social-list__link social-list__link--vk">Вконтакте</a>
+              <a href="https://vk.com" class="social-list__link link social-list__link--vk">Вконтакте</a>
             </li>
             <li class="social-list__item">
-              <a href="https://www.instagram.com" class="social-list__link social-list__link--inst">Инстаграмм</a>
+              <a href="https://www.instagram.com" class="social-list__link link social-list__link--inst">Инстаграмм</a>
             </li>
             <li class="social-list__item">
-              <a href="https://fb.com" class="social-list__link social-list__link--fb">Фэйсбук</a>
+              <a href="https://fb.com" class="social-list__link link social-list__link--fb">Фэйсбук</a>
             </li>
           </ul>
         </div>
         <div class="footer__developer developer">
-          <a href="https://htmlacademy.ru" class="developer__link">
+          <a href="https://htmlacademy.ru" class="developer__link link">
             <p class="developer__text">HTML Academy</p>
             <img src="htmlacademy-svg" alt="HTML Academy" width="27" height="34" class="developer__logo">
           </a>

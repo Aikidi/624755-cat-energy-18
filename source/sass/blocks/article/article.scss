@@ -1,0 +1,16 @@
+.article {
+  background-color: $gray;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 22px 20px;
+  min-height: 266px;
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    padding: 50px 80px 60px 62px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 297px;
+    padding: 46px 52px 60px 52px;
+  }
+}

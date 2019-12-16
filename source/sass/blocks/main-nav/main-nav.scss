@@ -1,0 +1,9 @@
+.main-nav {
+  position: relative;
+  width: 100%;
+}
+
+.main-nav--closed .site-list__item {
+  display: none;
+}
+

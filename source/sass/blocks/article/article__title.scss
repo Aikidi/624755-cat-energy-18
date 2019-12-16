@@ -4,17 +4,11 @@
   line-height: 37px;
   font-weight: normal;
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .article__title {
-    font-size: 36px;
-    line-height: 37px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .article__title {
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 37px;
+    }
+    @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 37px;
   }

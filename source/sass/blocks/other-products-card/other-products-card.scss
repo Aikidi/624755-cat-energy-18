@@ -1,0 +1,23 @@
+.other-products-card {
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 38px;
+    padding-left: 38px;
+
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-right: none;
+    border-left: none;
+  }
+}

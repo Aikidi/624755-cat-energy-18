@@ -1,3 +1,9 @@
 .header__logo {
   height: 65px;
+
+  border-bottom: 1px solid $lightgray;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }

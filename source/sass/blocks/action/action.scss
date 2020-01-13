@@ -1,0 +1,26 @@
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 42px;
+  height: 289px;
+
+  background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-bottom: 76px;
+    padding-right: 125px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding-bottom: 42px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 245px;
+  }
+}

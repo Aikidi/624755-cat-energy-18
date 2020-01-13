@@ -1,0 +1,9 @@
+.product-card__order-button {
+  width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}

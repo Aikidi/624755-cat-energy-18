@@ -1,0 +1,14 @@
+.feature__icon {
+  width: 60px;
+  min-width: 60px;
+  margin-right: 20px;
+  height: 60px;
+
+  background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    width: 80px;
+    height: 80px;
+  }
+}

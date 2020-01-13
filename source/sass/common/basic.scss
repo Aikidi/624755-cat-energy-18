@@ -1,6 +1,9 @@
 html {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -23,11 +26,24 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
-
-.common-list {
-  list-style: none;
+h1,
+h2,
+h3,
+p,
+fieldset {
   margin: 0;
   padding: 0;
+}
+
+input {
+  border: none;
+}
+
+.common-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .link {
@@ -37,32 +53,70 @@ input[type="radio"].visually-hidden {
 
 .page-wrapper {
   width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-    @media (min-width: $tablet-width) {
-      width: 708px;
-    }
-    @media (min-width: $desktop-width) {
-      width: 1200px;
-    }
+  @media (min-width: $tablet-width) {
+      width: 768px;
+  }
+  @media (min-width: $desktop-width) {
+      width: 1300px;
+  }
 }
 
 
 .subject-title {
-  font-family: Oswald;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   font-size: 16px;
   line-height: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-    }
-    @media (min-width: $desktop-width) {
-      font-size: 20px;
-      line-height: 20px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 160px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+
   outline: none;
+  border: none;
+  background-color: $green;
 }
+
+.section-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    font-size: 60px;
+  }
+}
+

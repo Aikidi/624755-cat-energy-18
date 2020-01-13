@@ -1,0 +1,9 @@
+.footer {
+  min-height: 236px;
+
+  background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+  }
+}
